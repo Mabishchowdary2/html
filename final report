@@ -1,0 +1,412 @@
+UNIVERSITY MANAGEMENT SYSTEM 
+ 
+INTRODUCTION: 
+                                                This university  management system is used for the students to login to the website and to know the latest updates of the university. It   is helpful for both student and parent. It gives the information of the examinations time table and the schedule of the classes.   
+ACKNOWLEDGEMENT: 
+                                  I would like to express my special thanks to my sir 
+(Dipen Saini) as well as our sir who gave me the golden opportunity  to do this wonderful project on university management system, which also helped me in doing a lot of research and I came to know about so many things. 
+DISCRIPTION OF THE PROJECT MODULES: 
+                                 All the three students in my group together started this 
+project. We started with a rough sketch. By using external CSS we have created the page header. By using the HTML we have created a login page. Th student who does not registered in the system for them we have created a registration form using HTML. After the login page we have started creating the home page. In the home page there lots of things the student who logged in their information and the photography of that student is shown in the master home page. In the home page we can see the other sites also they are. 
+*CHANGING PASSWORD  
+*LOGOUT 
+*TIME TABLE 
+*EXAMINATION 
+*HOME  
+*TEACHER ON LEAVE 
+*TODAY’S TIME TABLE 
+*ANNOUNCEMENTS 
+*ATTENDENCE 
+*SUBJECT WISE 
+     FLOW CHART: 
+     PROGRAMING PART AND THE OUPUT: PROGRAM FOR THE PAGE HEADER: For this I have used CSS 
+HTML PROGRAMING 	CSS PROGRAMING 
+<!DOCTYPE  html> 
+<html> 
+<head> 
+<title>ums.lpu</title> 
+<link rel="stylesheet" href="project.css"> 
+</head> 
+<div class="news" this could tells user about their information> 
+</div> 
+<div class="pageheader"> 
+<h1>    UNIVERSITY MANAGEMENT SYSTEM</h1> 
+</div> 
+</html> 	.pageheader{clear: both; 
+            background-color: orange; 
+            color: black;             padding: 20px; 
+             
+                         } 
+PROGRAM FOR THE LOGIN PAGE: 
+<!DOCTYPE  html> 
+<html> 
+<head> 
+<title>ums.lpu</title> 
+<link rel="stylesheet" href="project.css"> 
+</head> 
+<div class="news" this could tells user about their information> 
+</div> 
+<div class="pageheader"> 
+<h1>    UNIVERSITY MANAGEMENT SYSTEM</h1> 
+</div> 
+<body > 
+       <center> 
+              <h3>LOGIN HERE</h3> 
+              <form action="login.ums" method="post"> 
+                 <table> 
+                    <tr> 
+                       <td>username:</td> 
+                       <td> 
+                            <input type="text" name="user"> 
+                       </td> 
+                  </tr> 
+                  <tr> 
+                     <td>password:</td> 
+                     <td> 
+                         <input type="password" name="user_pass"> 
+                     </td> 
+                   </tr> 
+                  <tr> 
+                     <td><a href="project2.html">login</a>                      
+                    </td>  
+                    <td> 
+                       Not Yet A Member?<a href="register.html">Register</a> 
+                  </tr> 
+                 </table> 
+               </form> 
+</body> 
+</html> 
+PROGRAM FOR THE REGISTRATION FORM: 
+<head> 
+<title>Registration Forms</title> 
+</head> 
+<body> 
+<h2>U.M.S Registration Form</h2> 
+<form action="process.html" method="post"> 
+Username: <input name="textbox1" types="text"> <br> 
+<br> 
+Password: <input name="password1" type="password"> <br> 
+<br> 
+Adress:  <input name="adress1" type="adress"> <br> 
+<br> 
+<input type="radio" name="radio1" >Male<br> 
+<input type="radio" name="radio1" >Female<br>  
+Select city:<br> 
+<select name="select1" size="1"> 
+<option value="andhra pradesh"> Andhra Pradesh</option> 
+<option value="arunachal pradesh"> Arunachal Pradesh </option> 
+<option value="assam"> Assam </option> 
+<option value="bihar"> Bihar</option> 
+<option value="chhattishgarh"> Chhattishgarh </option> 
+<option value="goa"> Goa </option> 
+<option value="gujarat"> Gujarat</option> 
+<option value="haryana"> Haryana </option> 
+<option value="himachal pradesh> Himachal Pradesh </option> 
+<option value="jharkhand"> Jharkhand</option> 
+<option value="karnataka"> Karnataka </option> 
+<option value="madhya pradesh"> Madhya pradesh </option>    
+<option value="maharashtra"> Maharashtra</option> 
+<option value="manipur"> Manipur </option> 
+<option value="meghalya"> Meghalya </option>  
+<option value="mizoram"> Mizoram </option> 
+<option value="nagaland"> Nagaland </option> 
+<option value="odisha"> Odisha </option>  
+<option value="punjab"> Punjab</option> 
+<option value="rajasthan"> Rajasthan </option> 
+<option value="sikkim"> Sikkim </option>  
+<option value="tamil nadu"> Tamil Nadu</option> 
+<option value="telangana"> Telangana </option> 
+<option value="tripura"> Tripura </option>  
+<option value="uttar pradesh"> Uttar Pradesh</option> 
+<option value="uttarakhand"> Uttarakhand </option> 
+<option value="west bengal"> West Bengal </option>  
+</select><br> 
+<br> Tell us about yourself:<br> 
+<textarea name="tellmore" rows="5" cols="25" wrap= "hard">Please tell us more about yourself.</textarea><br><br>  
+<input type="submit" value="Submit" 
+<input type="reset" value="Clear" 
+</form> 
+</body> 
+</html> 
+PROGRAM FOR THE MASTER HOME PAGE: 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>ums</title> 
+</head> 
+<body> 
+<table align="center" border="5" bordercolor="black" bgcolor="black" cellpading="5" cellspacing="7"> 
+<tr height="75" bgcolor="orange" align="center"> 
+<td><img src= "C:\Users\Lenovo\Desktop\html\lpu.jpg"  alt="logo." align="left" /></td> <td> <a href="home.html">HOME</a></td> 
+<td> <a href="timetable.html">TIME TABLE </a></td> 
+<td> <a href="examination.html"> EXAMINATION </a></td> 
+<td> <a href="password.html"> CHANGE PASSWORD</a></td> 
+<td> 
+<form action="logout.ums" method="post"></form> 
+<table> 
+<tr> 
+<td> 
+ <input type="submit" name="submit" value="logout">  
+</td> 
+</tr> 
+</table> 
+</td> 
+</tr> 
+<tr  height="75" bgcolor="orange"> 
+<td rowspan="3">pic<img src= "C:\Users\Lenovo\Desktop\html\ajay.jpg"  alt="logo." width=200 height=300 /></td> <tr bgcolor="orange"> 
+<td colspan="5">attendence</td> 
+</tr> 
+<tr bgcolor="orange"> 
+<td colspan="5">subjectwise</td> 
+</tr> 
+</td> 
+</tr> 
+<tr  bgcolor="orange" > 
+<td  height="275" rowspan="5">LOGGED PERSON INFORMATION.html</td> 
+<tr bgcolor="orange"> 
+<td colspan="5"> todays time table</td> 
+</tr> 
+<tr bgcolor="orange"> 
+<td colspan="3"><a href="leave.html">TEACHER ON LEAVE</a></td> 
+<td colspan="2"><a href="announcements.html">ANNOUNCEMENTS</a></td> 
+</tr> 
+</tr> 
+</table> 
+  
+ 
+       </center> 
+</body> 
+</html> 
+PROGRAM FOR THE HOME PAGE: 
+<!DOCTYPE html> 
+<head> 
+<title>HOME</title> 
+</head> 
+<body   bgcolor="yellow" align="center"> 
+<h2>U.M.S HOME</h2> 
+<form action="process.html" method="post" > 
+Select UMS NAVIGATION:<br> 
+<select name="select1" size="1"> 
+<option value="central mail system">Central Mail System</option> 
+<option value="change of program"> Change Of Program </option> 
+<option value="finance management system"> Finance Management system</option> 
+<option value="health services"> Health Services</option> 
+<option value="my profile"> My Profile </option> 
+<option value="placement sevices">Placement Services</option> 
+<option value="relationship management system"> Relationship Management System</option> 
+<option value="research and development">Research And Development  </option> 
+<option value="resedential"> Residential </option> 
+<option value="scholorship management system"> Scholorship Management System</option> 
+<option value="student welfare"> Student Welfare </option> 
+<option value="examination system"> Examination System </option>    
+ </select><br> 
+<br> 
+<br> 
+Select IMPORTANT LINKS:<br> 
+<select name="select1" size="1"> 
+<option value="apply duplicate id"> Apply Duplicative ID</option> 
+<option value="appointment system"> Appointment System </option> 
+<option value="attendence marking"> Attendence Marking </option> 
+<option value="download formats"> Download formats</option> 
+<option value="emergency contact numbers"> Emergency Contact numbers </option> 
+<option value="policies & rules"> Policies&Rules </option> 
+<option value="semester/year abroad plans"> Semester/Year Abroad PLans</option> 
+<option value="view academic details"> View Academic Details </option> 
+<option value="compulsory accomidation details"> Compulsory Accomidation Details </option> 
+<option value="view academic calender"> View Academic Calender </option> 
+</select><br> 
+<br> 
+<br> 
+Select LIBRARY MANAGEMENT SYSTEM:<br> 
+<select name="select1" size="1"> 
+<option value="discussion room booking"> Discussion Room Booking </option> 
+<option value="dessertation"> Dessertation </option> 
+<option value="e-resouces"> E-Resources </option> 
+<option value="health services"> Health Services</option> 
+<option value="library search"> Library search </option> 
+</select><br> 
+<br> 
+<br> 
+Select RESIDENTIAL SERVICES:<br> 
+<select name="select1" size="1"> 
+<option value="electricity consumtion view"> Electricity Consumtion View</option> 
+<option value="hostel clock room application"> Aostel Clock Room Application </option> 
+<option value="hostel leave application">Hostel Leave Application </option> 
+<option value="mess card">Mess card </option> 
+<option value="residential booking"> Residential booking </option> 
+<option value="vendor sevices"> vendor Services</option> 
+</select><br> 
+</form> 
+</body> 
+</html> 
+PROGRAM FOR TIME TABLE: 
+<!DOCTYPE html> 
+<html> 
+<head> 
+</head> 
+<title>TIME TABLE</title> 
+</head> 
+<body bgcolor="yellow"> 
+<table border="5" bgcolor="orange" cellpadding="5" cellspacing="7" align="center"> 
+<caption></h3>TIME TABLE</h3></caption> 
+<tr> 
+<th>DAY</th> 
+<th>9AM-10AM</th> 
+<th>10AM-11AM</th> 
+<th>11AM-12PM</th> 
+<th>12PM-1PM</th> 
+<th>1PM-2PM</th> 
+<th>2PM-3PM</th> 
+<th>3PM-4PM</th> 
+<th>4PM-5PM</th> 
+</tr> 
+<tr> 
+<td>MONDAY</td> 
+<td>MEC-103(TUT)</td> 
+<td>MEC-103(TUT)</td> 
+<td>CSE-202(LEC)</td> 
+<td>CSE-202(LEC)</td> <td>BREAK</td> 
+<td>ECE-213(LEC)</td> 
+<td>PHY-109(LEC)</td> <td>PEL-121(TUT)</td> 
+</tr> 
+<tr> 
+<td>TUESDAY</td> 
+<td>MTH-166(LEC)</td> 
+<td>MTH-166(TUT)</td> 
+<td>ECE-213(LEC)</td> 
+<td>BREAK</td> 
+<td>CSE-326(PRACTICAL)</td> 
+<td>CSE-326(PRACTICAL)</td> 
+<td>CSE-202(LEC)</td> 
+<td>PHY-109(TUT)</td> 
+</tr> 
+<tr> 
+<td>WEDNESDAY</td> 
+<td>MTH-166(LEC)</td> 
+<td>ECE-213(TUT)</td> 
+<td>ECE-213(LEC)</td> 
+<td>BREAK</td> <td>CSE-202(PRACTICAL)</td> 
+<td>CSE-202(PRACTICAL)</td> 
+<td>PEL-121(TUT)</td> 
+<td>PEL-121(TUT)</td> 
+</tr> 
+<tr> 
+<td>THURSDAY</td> 
+<td>BREAK</td> 
+<td>MTH-166(LEC)</td> 
+<td>PHY-109(LEC)</td> 
+<td>BREAK</td> 
+<td>ECE-216(PRACTICAL)</td> 
+<td>ECE-216(PRACTICAL)</td> 
+<td>MEC-103(LEC)</td> 
+<td>MEC-103(LEC)</td> 
+</tr> 
+<tr> 
+<td>FRIDAY</td> 
+<td>BREAK</td> 
+<td>BREAK</td> 
+<td>PHY-119(PRACTICAL)</td> 
+<td>PHY-119(PRACTICAL)</td> 
+<td>MNT-002</td> 
+<td>BREAK</td> 
+<td>PHY-109(LEC)</td> 
+<td>PEL-121(PRACTICAL)</td> 
+</tr> 
+</table> </body> 
+</html> 
+PROGRAM TO CHANGE THE PASSSWORD: 
+<!DOCTYPE html> 
+<head> 
+<title>CHANGE PASSWORD</title> 
+</head> 
+<body> 
+<h2>U.M.S CHANGE PASSWORD Form</h2> 
+<form action="process.html" method="post"> 
+Current password: <input name="password1" types="password"> <br> 
+<br> 
+New Password: <input name="password2" type="password"> <br> 
+<br> 
+Confirm Password: <input name="password3" type="password"><br> 
+<br> 
+<input type="submit" value="Submit" 
+<input type="reset" value="Clear" 
+</form> 
+</body> 
+</html> 
+PROGRAM FOR THE EXAMINATION: 
+<!DOCTYPE html> 
+<html> 
+<head> 
+</head> 
+<title>EXAMINATION</title> 
+</head> 
+<body> 
+<table border="5" cellpadding="5" cellspacing="7" align="center"> 
+<caption></h3>EXAMINATION</h3></caption> 
+<tr> 
+<th>EXAM COURSE TITLE</th> 
+<th>COURSE CODE</th> 
+<th>DATE OF EXAM</th> 
+<th>EXAMINATION HALL</th> 
+</tr> 
+<tr> 
+<td>COMMUNICATION SKILLS</td> 
+<td> PEL-121</td> 
+<td> 29-APRIL-2020</td> 
+<td>A</td> 
+</tr> 
+<tr> 
+<td>ENGINEERING MATHEMATICS</td> 
+<td>MTH-166</td> 
+<td>1-MAY-2020</td> 
+<td>B</td> 
+</tr> 
+<tr> 
+<td>OBJECT ORIENTED PROGRAMING</td> 
+<td>CSE-202</td> 
+<td>4-MAY-2020</td> 
+<td>A</td> 
+</tr> 
+<td>DIGITAL ELECTRONICS</td> 
+<td>ECE-213</td> 
+<td>6-MAY-2020</td> 
+<td>D</td> 
+</tr> 
+<tr> 
+<td>ENGINEERING GRAPHICS</td> 
+<td>MEC-103</td> 
+<td>8-MAY-2020</td> 
+<td>A</td> 
+</tr> 
+<tr> 
+<td>ENGINEERING PHYSICS</td> 
+<td>PHY-109</td> 
+<td>11-MAY-2020</td> 
+<td>E</td> 
+</tr> 
+</table> </body> 
+</html> 
+PROGRAM FOR THE ANNOUNCEMENTS: 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>umsannouncements</title> 
+</head> 
+<body> 
+<h1 align="center">TODAY'S ANNOUNCEMENTS</h1> 
+<p>opurtunity to paricipate in WEB DEV PATASHALA</p> 
+<br> 
+<br> 
+<p>PLC labs starts in the last week of march</p><br> 
+<br> 
+<p>LPU is going to conduct a sports meet on APRIL_29</p> 
+<br> 
+<br> 
+<p>GREAT OPERTUNITY TO PARTICIPATE IN ONE INDIA</p> 
+<br> 
+<br> 
+<p>Extra classes for reappear students  starts fromthe month of MAY</p> 
+<br> 
+<br> 
+</body> 
+</html> 
